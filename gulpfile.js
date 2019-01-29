@@ -14,7 +14,7 @@ var gulp                   = require('gulp'),
     imagemin               = require('gulp-imagemin'),
     imageminJpegRecompress = require('imagemin-jpeg-recompress'),
     pngquant               = require('imagemin-pngquant'),
-    browserSync            = require('browser-sync').create(git);
+    browserSync            = require('browser-sync').create('git');
 
 
 //
@@ -58,7 +58,7 @@ gulp.task('sass', function () {
 gulp.task('serve', function() {
   browserSync.init({
     files: "./*.html",
-    startPath: ".",
+    startPath: "./",
     server: {
       baseDir: "./",
     },
