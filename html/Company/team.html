@@ -16,17 +16,17 @@
   <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
   <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
-  <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
-  <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
-  <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
-  <link rel="stylesheet" href="assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
-  <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
-  <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="../../assets/vendor/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
+  <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsparallaxer.css">
+  <link rel="stylesheet" href="../../assets/vendor/slick-carousel/slick/slick.css">
 
   <!-- CSS Front Template -->
-  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
 </head>
 <body>
   <!-- ========== HEADER ========== -->
@@ -37,7 +37,7 @@
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-lg u-header__navbar u-header__navbar--no-space mt-3">
           <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="../../index.html" aria-label="Front">
             <span class="u-header__navbar-brand-text">TotalABA</span>
           </a>
           <!-- End Logo -->
@@ -56,82 +56,47 @@
           <!-- End Responsive Toggle Button -->
 
           <!-- Navigation -->
-          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse u-header-center-aligned-nav">
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse u-header-right-aligned-nav">
             <ul class="navbar-nav u-header__navbar-nav">
               <!-- FEATURES -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item"
-			      data-event="hover"
-			      data-animation-in="slideInUp"
-			      data-animation-out="fadeOut"
-			      data-max-width="720px"
-			      data-position="right">
-			    <a id="threeColumnsMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Features</a>
+  			 <!-- Company -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+                <a id="blogMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Features</a>
 
-			    <!-- 3 Columns Item - Mega Menu -->
-			    <div class="hs-mega-menu w-100 u-header__sub-menu u-header__mega-menu-position-right-fix" aria-labelledby="threeColumnsMegaMenu">
-			      <div class="row u-header__mega-menu-wrapper">
-			        <div class="col-sm-4 mb-3 mb-sm-0">
-			          <span class="u-header__sub-menu-title">Practice Management</span>
-			          <ul class="u-header__sub-menu-nav-group mb-3">
-			            <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Scheduling</a></li>
-			            <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Lessons &amp; Plans</a></li>
-			            <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Analytical Reporting</a></li>
-			            <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Behavior Tracking</a></li>
+                <!-- Blog - Submenu -->
+                <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="blogMegaMenu" style="min-width: 300px;">
+                  <!-- Classic -->
+                  <li>
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Features/pm.html">Practice Managment</a>
+                  </li>
+                  <li>
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Features/cm.html">Clinical Management</a>
+                  </li>
+                  <li>
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Features/billing.html">Billing</a>
+                  </li>
 
-			          </ul>
-			        </div>
-
-			        <div class="col-sm-4 mb-3 mb-sm-0">
-			          <span class="u-header__sub-menu-title">Clinical Management</span>
-			          <ul class="u-header__sub-menu-nav-group">
-			            <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Authorization Tracking</a></li>
-			            <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Clinical Documentation</a></li>
-			            <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Staff Time &amp; Attendance</a></li>
-			            <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Staff Management</a></li>
-			            <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Inter-Office Communications</a></li>
+                </ul>
+                <!-- End Submenu -->
+              </li>
+              <!-- End Company -->
+				<!-- End Interactive Nav Item -->
 
 
-			          </ul>
-			        </div>
-
-			        <div class="col-sm-4">
-			          <span class="u-header__sub-menu-title">Billing</span>
-			          <ul class="u-header__sub-menu-nav-group mb-3">
-			            <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Integrated Billing</a></li>
-			            <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Charge Capture &amp; Invoicing</a></li>
-			            <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Client Onboarding &amp; Tracking</a></li>
-			          </ul>
-			        </div>
-			      </div>
-			      	<div class="u-header__promo-footer">
-			            <div class="u-header__promo-footer-item">
-				            <small class="text-muted d-block">Check what's new</small>
-				            <a class="small" href="#">
-				              Changelog
-				            </a>
-			            </div>
-			         </div>
-			    </div>
-
-
-			    <!-- End 3 Columns Item - Mega Menu -->
-			  </li>
-
-
-              
-              <!-- End FEATURES -->
-
-              <!-- Pages -->
+              <!-- Pricing -->
               <li class="nav-item u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut">
-                <a  class="nav-link u-header__nav-link " href="/html/Pricing/pricing.html" aria-haspopup="false" aria-expanded="false">Pricing</a>
+                <a  class="nav-link u-header__nav-link " href="../../html/Pricing/pricing.html" aria-haspopup="false" aria-expanded="false">Pricing</a>
 
               </li>
-              <!-- End Pages -->
+              <!-- Pricing -->
 
-              <!-- Blog -->
+              <!-- Company -->
               <li class="nav-item hs-has-sub-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
@@ -142,27 +107,30 @@
                 <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
                   <!-- Classic -->
                   <li>
-                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="javascript:;">About</a>
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Company/about.html">About</a>
                   </li>
                   <li>
-                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="javascript:;">Customers</a>
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Company/customers">Customers</a>
                   </li>
                   <li>
-                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="javascript:;">Team</a>
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Company/team.html">Team</a>
                   </li>
                   <li>
-                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="javascript:;">Career</a>
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Company/career.html">Career</a>
                   </li>
                   <li>
-                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="javascript:;">Contact</a>
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Company/contact.html">Contact</a>
                   </li>
 
                 </ul>
                 <!-- End Submenu -->
               </li>
-              <!-- End Blog -->
+              <!-- End Company -->
 
-              <!-- Shop -->
+             
+
+
+              <!-- Resources -->
               <li class="nav-item hs-has-mega-menu u-header__nav-item"
 			    data-event="hover"
 			    data-animation-in="slideInUp"
@@ -175,15 +143,14 @@
 			  <div class="hs-mega-menu u-header__sub-menu u-header__mega-menu-position-right-fix aria-labelledby="interactiveMegaMenu4" style="min-width: 330px;">
 			    <!-- Promo Item -->
 			    <div class="u-header__promo-item">
-			      <a class="u-header__promo-link" href="#">
+			      <a class="u-header__promo-link" href="../../html/Resources/doc.html">
 			        <div class="media align-items-center">
-			          <img class="js-svg-injector u-header__promo-icon" src="assets/svg/icons/icon-2.svg" alt="SVG">
+			          <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-12.svg" alt="SVG">
 			          <div class="media-body">
 			            <span class="u-header__promo-title">
 			              Documentation
-			              <span class="badge badge-primary badge-pill ml-1">v2.0</span>
 			            </span>
-			            <small class="u-header__promo-text">Development guides</small>
+			            <small class="u-header__promo-text">Knowledge base and FAQ</small>
 			          </div>
 			        </div>
 			      </a>
@@ -192,45 +159,51 @@
 
 			    <!-- Promo Item -->
 			    <div class="u-header__promo-item">
-			      <a class="u-header__promo-link" href="#">
+			      <a class="u-header__promo-link" href="../../html/Resources/support.html">
 			        <div class="media align-items-center">
-			          <img class="js-svg-injector u-header__promo-icon" src="assets/svg/icons/icon-1.svg" alt="SVG">
+			          <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-15.svg" alt="SVG">
 			          <div class="media-body">
-			            <span class="u-header__promo-title">Get started</span>
-			            <small class="u-header__promo-text">Components and snippets</small>
+			            <span class="u-header__promo-title">Support</span>
+			            <small class="u-header__promo-text">Ask a technical questions</small>
 			          </div>
 			        </div>
 			      </a>
 			    </div>
 			    <!-- End Promo Item -->
 
-			    <div class="u-header__promo-footer">
-			      <!-- List -->
-			      <div class="row no-gutters">
-			        <div class="col-6">
-			          <div class="u-header__promo-footer-item">
-			            <small class="text-muted d-block">Check what's new</small>
-			            <a class="small" href="#">
-			              See Updates
-			            </a>
+			    <!-- Promo Item -->
+			    <div class="u-header__promo-item">
+			      <a class="u-header__promo-link" href="../../html/Resources/blog.html">
+			        <div class="media align-items-center">
+			          <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-2.svg" alt="SVG">
+			          <div class="media-body">
+			            <span class="u-header__promo-title">Blog</span>
+			            <small class="u-header__promo-text">Lastest Articles</small>
 			          </div>
 			        </div>
-			        <div class="col-6 u-header__promo-footer-ver-divider">
-			          <div class="u-header__promo-footer-item">
-			            <small class="text-muted d-block">Have a question?</small>
-			            <a class="small" href="#">
-			              Contact us
-			            </a>
-			          </div>
-			        </div>
-			      </div>
-			      <!-- End List -->
+			      </a>
 			    </div>
+			    <!-- End Promo Item -->
+
+			    <!-- Promo Item -->
+			    <div class="u-header__promo-item">
+			      <a class="u-header__promo-link" href="../../html/Resources/press.html">
+			        <div class="media align-items-center">
+			          <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-23.svg" alt="SVG">
+			          <div class="media-body">
+			            <span class="u-header__promo-title">Press &amp; Media</span>
+			            <small class="u-header__promo-text">Latest news and videos</small>
+			          </div>
+			        </div>
+			      </a>
+			    </div>
+			    <!-- End Promo Item -->
 			  </div>
 			  <!-- End Interactive Nav Item - Mega Menu -->
 			</li>
-              <!-- End Shop -->
-              			  <!-- Divider -->
+              <!-- End Resources -->
+
+              <!-- Divider -->
 			  <li class="dropdown-divider"></li>
 
               
@@ -273,237 +246,41 @@
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
-    <!-- Hero Section -->
-	  <div class="container text-center space-top-2 space-top-md-4 space-top-lg-3 ">
-	    <div class="w-md-75 mx-md-auto mb-5">
-	      <h1 class="text-primary h2 font-size-md-down-3 font-weight-semi-bold mb-4">Practice management, clinical, and billing solutions. For therapists that care about their clients.</h2>
-	      <p class="lead">TotalAba empowers <span class="text-primary font-weight-medium">1000+</span> therapists reaching out to more patients. You care about delivering the best practice to your clients, and we care about you.</p>
+
+
+
+  <div class="clearfix space-top-3">
+	  <div class="container">
+	    <!-- Title -->
+	    <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
+	      <h2 class="font-weight-normal">Our Team</h2>
+	      <br>
+	      <p class="lead">ABA profoundly improves the lives of millions of children and their families. We believe all therapists deserve the best software and support to enable them to be more productive and increase the quality of lives.</p>
 	    </div>
-
-	    <div class="mb-10">
-	      <!-- Fancybox -->
-	      <a class="btn btn-outline-secondary btn-wide transition-3d-hover mb-2 mb-sm-0 mr-sm-2" href="" target="_blank">
-	        <small class="mr-2"></small>
-	        Learn More
-	      </a>
-	      <!-- End Fancybox -->
-
-	      <a class="btn btn-primary btn-wide transition-3d-hover mb-2 mb-sm-0" href="" target="_blank">Request a Demo</a>
-	    </div>
-
-	    <!-- Video Section -->
-		<div class="container space-1">
-		  <div class="row justify-content-sm-center">
-		    <div class="col-lg-10 col-xl-9">
-		      <!-- Video Block -->
-		      <div id="youTubeVideoPlayerExample1" class="u-video-player">
-		        <!-- Cover Image -->
-		        <img class="img-fluid u-video-player__preview" src="assets/img/home-page/video.png" alt="Image">
-		        <!-- End Cover Image -->
-
-		        <!-- Play Button -->
-		        <a class="js-inline-video-player u-video-player__btn u-video-player__centered" href="javascript:;"
-		           data-parent="youTubeVideoPlayerExample1"
-		           data-target="youTubeVideoIframeExample1"
-		           data-classes="u-video-player__played">
-		          <span class="u-video-player__icon u-video-player__icon--lg text-primary">
-		            <span class="fas fa-play u-video-player__icon-inner"></span>
-		          </span>
-		        </a>
-		        <!-- End Play Button -->
-
-		        <!-- Video Iframe -->
-		        <div class="embed-responsive embed-responsive-16by9">
-		          <iframe id="youTubeVideoIframeExample1" class="embed-responsive-item" allowfullscreen src="https://www.youtube.com/embed/iJIDdtH1nT4?controls=1"></iframe>
-		        </div>
-		        <!-- End Video Iframe -->
-		      </div>
-		      <!-- End Video Block -->
-		    </div>
-		  </div>
-		</div>
-		<!-- End Video Section -->
-
-	  </div>
-
-	<!-- End Hero Section -->
-
-   <!-- Overview Section -->
-    <div id="featuresSection" class="container space-2 space-md-3">
-      <!-- Title -->
-      <div class="w-md-20 w-lg-60 text-center mx-md-auto mb-9">
-      	<small class="text-secondary text-uppercase font-weight-medium">Designed to assist Applied Behavior Analysis</small>
-        <h3 class="text-primary font-weight-semi-bold">The complete tools set for professional therapists</h3>
-        <p>TotalAba enables thousands of Autism, Speech and Occupational Therapists to manage their interaction with the clients. You can focus on bringing the best to your clients, and Totalaba will handle the rest.</p>
-      </div>
-      <!-- End Title -->
-    <!--End Overview -->
-
-
-    <!-- Benefit 1 Block -->
-	<div class="container space-bottom-2 space-top-2 space-bottom-md-3">
-	  <div class="row align-items-lg-center">
-	    <div class="col-lg-5 mb-7 mb-lg-0">
-	      <!-- Title -->
-	      <div class="pr-lg-4">
-	        <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
-	          <span class="small font-weight-semi-bold btn-icon__inner">01.</span>
-	        </span>
-	        <h2 class="h4 font-weight-semi-bold text-primary">Your Own Customized Modules</h2>
-	        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere orci sit amet nibh varius dapibus. Praesent lacinia sapien sed quam facilisis, quis sagittis odio consectetur. Etiam sodales condimentum molestie.</p>
-	      </div>
-	      <!-- End Title -->
-	    </div>
-
-	      <!-- SVG Icon -->
-        <div class="col-lg-7 position-relative">
-           <div class="pl-md-9">
-           <img class="img-fluid rounded" src="assets/img/home-page/feature-1.png" alt="Image Description">
-           </div>
-        </div>
-	      <!-- End SVG Icon -->
-
-	  </div>
+	   </div>
 	</div>
-	<!-- End Benefit 1 Block -->
+	    <!-- End Title -->
 
-	<!-- Benefit 2 Block -->
-	<div class="container space-1">
-	  <div class="row align-items-lg-center">
-	    <div class="col-lg-5 order-lg-2 mb-7 mb-lg-0">
-	      <!-- Title -->
-	      <div class="pl-lg-4">
-	        <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
-	          <span class="small font-weight-semi-bold btn-icon__inner">02.</span>
-	        </span>
-	        <h2 class="h4 font-weight-semi-bold text-primary">Accessible Everywhere</h2>
-	        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere orci sit amet nibh varius dapibus. Praesent lacinia sapien sed quam facilisis, quis sagittis odio consectetur. Etiam sodales condimentum molestie.</p>
-	      </div>
-	      <!-- End Title -->
-	    </div>
 
-	      <!-- SVG Icon -->
-        <div class="col-lg-7 position-relative">
-           <div class="pr-md-9">
-           <img class="img-fluid rounded" src="assets/img/home-page/feature-2.png" alt="Image Description">
-           </div>
-        </div>
-	      <!-- End SVG Icon -->
+
+	  <div class="container">
+	  
 
 	  </div>
-	</div>
-	<!-- End Benefit 2 Block -->
-
-	<!-- Benefit 3 Block -->
-	<div class="container space-top-2 space-top-md-3">
-	  <div class="row align-items-lg-center">
-	    <div class="col-lg-5 mb-7 mb-lg-0">
-	      <!-- Title -->
-	      <div class="pr-lg-4">
-	        <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
-	          <span class="small font-weight-semi-bold btn-icon__inner">03.</span>
-	        </span>
-	        <h2 class="h4 font-weight-semi-bold text-primary">Continuously Improving</h2>
-	        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere orci sit amet nibh varius dapibus. Praesent lacinia sapien sed quam facilisis, quis sagittis odio consectetur. Etiam sodales condimentum molestie.</p>
-	      </div>
-	      <!-- End Title -->
-	    </div>
-
-	   	<!-- SVG Icon -->
-        <div class="col-lg-7 position-relative">
-           <div class="pl-md-9">
-           <img class="img-fluid rounded" src="assets/img/home-page/feature-3.png" alt="Image Description">
-           </div>
-        </div>
-	      <!-- End SVG Icon -->
-	  </div>
-	</div>
-	<!-- End Benefit 3 Block -->
-
-
-	<!-- Clients Section -->
-	<div class="w-md-20 w-lg-60 text-center mx-md-auto space-top-3">
-        <h3 class="text-primary font-weight-semi-bold">Some clinics use TotalABA for professional applied behavior analysis to achieve desirable outcomes</h3>
-    </div>
-	<div class="row justify-content-center text-center mt-10">
-
-	  <div class="col-4 col-md-2 mb-8">
-	    <img class="u-clients" src="assets/img/company-logo/fbx.png" alt="Image Description">
-	  </div>
-	  <div class="col-4 col-md-2 mb-8">
-	    <img class="u-clients" src="assets/img/company-logo/ffbc.png" alt="Image Description">
-	  </div>
-	  <div class="col-4 col-md-2 mb-8">
-	    <img class="u-clients" src="assets/img/company-logo/hope-bridge.png" alt="Image Description">
-	  </div>
-	  <div class="col-4 col-md-2 mb-8">
-	    <img class="u-clients" src="assets/img/company-logo/mrc.jpg" alt="Image Description">
-	  </div>
-	  <div class="col-4 col-md-2 mb-8">
-	    <img class="u-clients" src="assets/img/company-logo/nexus.png" alt="Image Description">
-	  </div>
-
-	  <div class="w-100"></div>
-
-	  <div class="col-4 col-md-2 mb-8">
-	    <img class="u-clients" src="assets/img/company-logo/partington.png" alt="Image Description">
-	  </div>
-	  <div class="col-4 col-md-2 mb-8">
-	    <img class="u-clients" src="assets/img/company-logo/spectra.jpg" alt="Image Description">
-	  </div>
-	  <div class="col-4 col-md-2 mb-8">
-	    <img class="u-clients" src="assets/img/company-logo/via.png" alt="Image Description">
-	  </div>
-	</div>
 
 
 
-	<!-- End Clients Section -->
 
 
 
-    <!-- Testimonials Section -->
-    <div class="container space-bottom-2 space-bottom-md-3 space-top-2 space-top-md-2">
+	
 
-      <!-- Blockquote -->
-      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-6">
-        <blockquote class="lead text-secondary font-weight-normal">" I work for a medical billing company. We have several clients who use Total ABA for scheduling appointments, uploading documentation, creating sessions and sending their charges over for billing. "</blockquote>
-      </div>
-      <!-- End Blockquote -->
 
-      <!-- Reviewer -->
-      <div class="d-flex justify-content-center align-items-center w-lg-50 mx-auto">
-        <div class="u-avatar">
-          <img class="img-fluid rounded-circle" src="assets/img/company-logo/mrc.jpg" alt="Image Description">
-        </div>
-        <div class="ml-3">
-          <h4 class="h6 mb-0">Karen</h4>
-          <small class="text-muted">Billing manager at MRC Billing Services</small>
-        </div>
-      </div>
-      <!-- End Reviewer -->
-    </div>
-    <!-- End Testimonials Section -->
+
+
 
     
-
    
-    <!-- CTA -->
-		<div class="container text-center">
-		  <!-- Title -->
-		  <div class="w-md-60 text-center mx-auto mb-4">
-		    <p class="lead">Ready to get started?</>
-		    <h1 class=" h3"><strong class="text-primary">Take your action now</strong></h2>
-		  </div>
-		  <!-- End Title -->
-
-		  <div >
-		    <a class="btn btn-primary btn-wide transition-3d-hover mx-2" href="#">Request a demo</a>
-		  </div>
-
-		</div>
-
-<!-- End CTA -->
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
@@ -515,7 +292,7 @@
 	      <div class="col-lg-3 mb-5 mb-lg-0">
 	        <div class="d-flex align-self-start flex-column h-100">
 	          <!-- Logo -->
-	          <a class="d-flex align-items-center mb-3" href="index.html" aria-label="Front">
+	          <a class="d-flex align-items-center mb-3" href="../../index.html" aria-label="Front">
 	            <span class="brand brand-primary">TotalABA</span>
 	          </a>
 	          <!-- End Logo -->
@@ -530,9 +307,9 @@
 
 	        <!-- List Group -->
 	        <ul class="list-group list-group-transparent list-group-borderless mb-0">
-	          <li><a class="list-group-item list-group-item-action" href="../account/dashboard.html">Practice Management</a></li>
-	          <li><a class="list-group-item list-group-item-action" href="../account/my-tasks.html">Clinical Management</a></li>
-	          <li><a class="list-group-item list-group-item-action" href="../account/projects.html">Billing</a></li>
+	          <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Features/pm.html">Practice Management</a></li>
+	          <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Features/cm.html">Clinical Management</a></li>
+	          <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Features/billing.html">Billing</a></li>
 
 	        </ul>
 	        <!-- End List Group -->
@@ -543,11 +320,11 @@
 
 	        <!-- List Group -->
 	        <ul class="list-group list-group-transparent list-group-borderless mb-0">
-	          <li><a class="list-group-item list-group-item-action" href="../pages/about-agency.html">About</a></li>
-	          <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Customers</a></li>
-	          <li><a class="list-group-item list-group-item-action" href="../pages/careers.html">Team</a></li>
-	          <li><a class="list-group-item list-group-item-action" href="../pages/careers.html">Careers</a></li>
-	          <li><a class="list-group-item list-group-item-action" href="../pages/grid-right-sidebar.html">Contact</a></li>
+	          <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Company/about.html">About</a></li>
+	          <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Company/customers.html">Customers</a></li>
+	          <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Company/team.html">Team</a></li>
+	          <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Company/careers.html">Careers</a></li>
+	          <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Company/contact.html">Contact</a></li>
 	        </ul>
 	        <!-- End List Group -->
 	      </div>
@@ -557,19 +334,19 @@
 
 	        <!-- List Group -->
 	        <ul class="list-group list-group-transparent list-group-borderless mb-0">
-	          <li><a class="list-group-item list-group-item-action" href="../pages/contacts-agency.html">Support</a></li>
-	          <li><a class="list-group-item list-group-item-action" href="../pages/help.html">Documents</a></li>
-	          <li><a class="list-group-item list-group-item-action" href="../pages/terms.html">Blog</a></li>
-	          <li><a class="list-group-item list-group-item-action" href="../pages/privacy.html">Press &amp; media</a></li>
+	          <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Resources/doc.html">Documents</a></li>
+	          <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Resources/support.html">Support</a></li>
+	          <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Resources/blog.html">Blog</a></li>
+	          <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Resources/press.html">Press &amp; media</a></li>
 	        </ul>
 	        <!-- End List Group -->
 	      </div>
 
 	      <div class="col-md-3 col-lg-2">
 	      	  <ul class="list-group list-group-transparent list-group-borderless mb-0">
-	      	  <li><a class="list-group-item list-group-item-action" href="../pages/contacts-agency.html">Pricing</a></li>
-	      	  <li><a class="list-group-item list-group-item-action" href="../pages/contacts-agency.html">Terms &amp; Policy</a></li>
-	      	  <li><a class="list-group-item list-group-item-action" href="../pages/contacts-agency.html">Contact</a></li>
+	      	  <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Pricing/pricing">Pricing</a></li>
+	      	  <li><a class="pl-0 list-group-item list-group-item-action" href="../pages/contacts-agency.html">Terms &amp; Policy</a></li>
+	      	  <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Company/contact.html">Contact</a></li>
 
 			  </ul>
 
@@ -611,36 +388,33 @@
 
 
   <!-- JS Global Compulsory -->
-  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-  <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
-  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
 
   <!-- JS Implementing Plugins -->
-  <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-  <script src="assets/vendor/player.js/dist/player.min.js"></script>
-  <script src="assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
-  <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-  <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-  <script src="assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
-  <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
-  <script src="assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+  <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="../../assets/vendor/custombox/dist/custombox.min.js"></script>
+  <script src="../../assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+  <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="../../assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
 
   <!-- JS Front -->
-  <script src="assets/js/hs.core.js"></script>
-  <script src="assets/js/components/hs.video-player.js"></script>
-  <script src="assets/js/components/hs.header.js"></script>
-  <script src="assets/js/components/hs.unfold.js"></script>
-  <script src="assets/js/components/hs.focus-state.js"></script>
-  <script src="assets/js/components/hs.malihu-scrollbar.js"></script>
-  <script src="assets/js/components/hs.validation.js"></script>
-  <script src="assets/js/components/hs.show-animation.js"></script>
-  <script src="assets/js/components/hs.svg-injector.js"></script>
-  <script src="assets/js/components/hs.fancybox.js"></script>
-  <script src="assets/js/components/hs.range-slider.js"></script>
-  <script src="assets/js/components/hs.slick-carousel.js"></script>
-  <script src="assets/js/components/hs.go-to.js"></script>
+  <script src="../../assets/js/hs.core.js"></script>
+  <script src="../../assets/js/components/hs.header.js"></script>
+  <script src="../../assets/js/components/hs.unfold.js"></script>
+  <script src="../../assets/js/components/hs.focus-state.js"></script>
+  <script src="../../assets/js/components/hs.validation.js"></script>
+  <script src="../../assets/js/components/hs.fancybox.js"></script>
+  <script src="../../assets/js/components/hs.slick-carousel.js"></script>
+  <script src="../../assets/js/components/hs.modal-window.js"></script>
+  <script src="../../assets/js/components/hs.cubeportfolio.js"></script>
+  <script src="../../assets/js/components/hs.svg-injector.js"></script>
+  <script src="../../assets/js/components/hs.go-to.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
