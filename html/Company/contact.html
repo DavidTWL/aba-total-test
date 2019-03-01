@@ -27,7 +27,20 @@
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="../../assets/css/theme.css">
+
+      <!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<!-- Calendly link widget end -->
+
+<!-- Start of  Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=8b4017db-429b-4e0f-a3e3-366740570c71"> </script>
+<!-- End of  Zendesk Widget script -->
+
 </head>
+
+
+
 <body>
   <!-- ========== HEADER ========== -->
   <header id="header" class="u-header u-header--bg-transparent">
@@ -57,7 +70,7 @@
 
           <!-- Navigation -->
           <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse u-header-right-aligned-nav">
-            <ul class="navbar-nav u-header__navbar-nav">
+            <ul class="navbar-nav  u-header__navbar-nav">
               <!-- FEATURES -->
          <!-- Company -->
               <li class="nav-item hs-has-sub-menu u-header__nav-item"
@@ -67,7 +80,10 @@
                 <a id="blogMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Features</a>
 
                 <!-- Blog - Submenu -->
-                <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="blogMegaMenu" style="min-width: 300px;">
+
+               
+
+                <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu pl-2 pl-md-0" aria-labelledby="blogMegaMenu" style="min-width: 300px;">
                   <!-- Classic -->
                   <li>
                     <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Features/pm.html">Practice Managment</a>
@@ -104,13 +120,13 @@
                 <a id="blogMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Company</a>
 
                 <!-- Blog - Submenu -->
-                <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
+                <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu pl-2 pl-md-0" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
                   <!-- Classic -->
                   <li>
                     <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Company/about.html">About</a>
                   </li>
                   <li>
-                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Company/customers">Customers</a>
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Company/customers.html">Customers</a>
                   </li>
                   <li>
                     <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Company/team.html">Team</a>
@@ -127,81 +143,34 @@
               </li>
               <!-- End Company -->
 
-             
-
-
+              
               <!-- Resources -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item"
-          data-event="hover"
-          data-animation-in="slideInUp"
-          data-animation-out="fadeOut"
-          data-max-width="360px"
-          data-position="right">
-        <a id="interactiveMegaMenu4" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Resources</a>
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+                <a id="blogMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Resources</a>
 
-        <!-- Interactive Nav Item - Mega Menu -->
-        <div class="hs-mega-menu u-header__sub-menu u-header__mega-menu-position-right-fix aria-labelledby="interactiveMegaMenu4" style="min-width: 330px;">
-          <!-- Promo Item -->
-          <div class="u-header__promo-item">
-			  <a class="u-header__promo-link" target="_blank" href="http://totalaba.screenstepslive.com/s/17489/m/67961">
-              <div class="media align-items-center">
-                <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-12.svg" alt="SVG">
-                <div class="media-body">
-                  <span class="u-header__promo-title">
-                    Documentation
-                  </span>
-                  <small class="u-header__promo-text">Knowledge base and FAQ</small>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- End Promo Item -->
+                <!-- Blog - Submenu -->
+                <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu pl-2 pl-md-0" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
+                  <!-- Classic -->
+                  <li>
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" target="_blank" href="http://totalaba.screenstepslive.com/s/17489/m/67961">Documentation</a>
 
-          <!-- Promo Item -->
-          <div class="u-header__promo-item">
-            <a class="u-header__promo-link" href="../../html/Resources/support.html">
-              <div class="media align-items-center">
-                <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-15.svg" alt="SVG">
-                <div class="media-body">
-                  <span class="u-header__promo-title">Support</span>
-                  <small class="u-header__promo-text">Ask a technical questions</small>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- End Promo Item -->
+                  </li>
+                  <li>
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Resources/videos.html">Videos</a>
+                  </li>
+                  <li>
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link" href="../../html/Resources/news.html">News</a>
+                  </li>
 
-          <!-- Promo Item -->
-          <div class="u-header__promo-item">
-            <a class="u-header__promo-link" href="../../html/Resources/blog.html">
-              <div class="media align-items-center">
-                <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-2.svg" alt="SVG">
-                <div class="media-body">
-                  <span class="u-header__promo-title">Blog</span>
-                  <small class="u-header__promo-text">Lastest Articles</small>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- End Promo Item -->
-
-          <!-- Promo Item -->
-          <div class="u-header__promo-item">
-            <a class="u-header__promo-link" href="../../html/Resources/press.html">
-              <div class="media align-items-center">
-                <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-23.svg" alt="SVG">
-                <div class="media-body">
-                  <span class="u-header__promo-title">Press &amp; Media</span>
-                  <small class="u-header__promo-text">Latest news and videos</small>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- End Promo Item -->
-        </div>
-        <!-- End Interactive Nav Item - Mega Menu -->
-      </li>
+                </ul>
+                <!-- End Submenu -->
+              </li>
               <!-- End Resources -->
+
+              
 
               <!-- Divider -->
         <li class="dropdown-divider"></li>
@@ -223,7 +192,7 @@
 
               </li>
               <li class="nav-item">
-                <a class="mt-1 btn btn-sm btn-primary transition-3d-hover" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">
+                <a class="mt-1 btn btn-sm btn-primary transition-3d-hover" href="" onclick="Calendly.showPopupWidget('https://calendly.com/totalaba/demo');return false;">
                   Request a demo
                 </a>
               </li>
@@ -300,7 +269,7 @@
             <h4 class="h5 mb-1">Talk to us</h4>
             <p>Make a appointment online and we will gladly talk to you</p>
           </div>
-          <a class="btn btn-sm btn-soft-primary btn-wide" href="#">Request a demo</a>
+          <a class="btn btn-sm btn-soft-primary btn-wide" href="" onclick="Calendly.showPopupWidget('https://calendly.com/totalaba/demo');return false;">Request a demo</a>
         </div>
         <!-- End Card -->
       </div>
@@ -308,25 +277,22 @@
   </div>
 
 
-    <div class="clearfix space-top-2">
-    <div class="container">
-      <!-- Title -->
-      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
+<!--   <div class="clearfix space-top-2">
+    <div class="container"> -->
+<!--       <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
         <h2 class="font-weight-normal">Or, Drop a message.</h2>
         <br>
         <p class="lead"></p>
       </div>
      </div>
-  </div>
-
-
+  </div> -->
 
 
 
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
- <!-- ========== FOOTER ========== -->
+  <!-- ========== FOOTER ========== -->
   <footer class="bg-light">
    <div class="container">
     <div class="border-bottom pt-4 pt-md-6">
@@ -338,6 +304,7 @@
               <span class="brand brand-primary">TotalABA</span>
             </a>
             <!-- End Logo -->
+
             <!-- Contact -->
 
             <ul class="list-group list-group-flush list-group-borderless mb-0">
@@ -405,10 +372,9 @@
 
           <!-- List Group -->
           <ul class="list-group list-group-transparent list-group-borderless mb-0">
-	          <li><a class="pl-0 list-group-item list-group-item-action" href="http://totalaba.screenstepslive.com/s/17489/m/67961" target="_blank">Documents</a></li>
-            <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Resources/support.html">Support</a></li>
-            <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Resources/blog.html">Blog</a></li>
-            <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Resources/press.html">Press &amp; media</a></li>
+            <li><a class="pl-0 list-group-item list-group-item-action" href="http://totalaba.screenstepslive.com/s/17489/m/67961" target="_blank">Documentation</a></li>
+            <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Resources/videos.html">Videos</a></li>
+            <li><a class="pl-0 list-group-item list-group-item-action" href="../../html/Resources/news.html">News</a></li>
           </ul>
           <!-- End List Group -->
         </div>
@@ -455,7 +421,7 @@
     </div>
    </div>
   </footer>
-  <!-- ========== END FOOTER ========== -->|
+  <!-- ========== END FOOTER ========== -->
 
 
   <!-- JS Global Compulsory -->
